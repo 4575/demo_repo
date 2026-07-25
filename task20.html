@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* position: static; */
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: absolute;
+          left: 50px;
+            top: 60px;
+            bottom: 26px;
+            right: 44px;
+            z-index: 2;
+        }
+        .header{
+            height: 50px;
+            background-color: yellow;
+            position: sticky;
+            top:0px;
+        }
+        body{
+            height: 1000vh;
+        }
+        .box2{
+            height: 100px;
+            width:150px;
+            background-color: black;
+            position: absolute;
+            z-index: 1;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>hello</div>
+    </div>
+    <div class="box"><p>hi</p></div>
+    <div class="box2">hello</div>
+    
+</body>
+</html>

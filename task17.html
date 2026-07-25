@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+            margin: 15%;
+            position: relative;
+            
+        }
+        #div1{
+            animation-name: cc;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+        }
+        @keyframes cc{
+            0%{left: 0px; top:0px;}
+            25%{left: 250px; top:0px;}
+            50%{top: 250px; left:250px;}
+            75%{left:0px; top:250px; }
+            100%{top:0px ; left:0px;}
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

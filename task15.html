@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 10%;
+            background-color: burlywood;
+            position: relative;
+    
+
+        }
+        #div1{
+            animation-name: cc;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+
+
+        }
+        @keyframes cc{
+            from{
+                background-color: burlywood;
+                left: 0px;
+
+            }
+            to{
+                background-color: black;
+                border-radius: 20px;
+                left: 200px;
+            }
+            
+            
+             /* 0% {background-color: black;}
+             25% {background-color: crimson;}
+             50%{background-color: cadetblue;}
+             75%{background-color: gold;}
+             100%{background-color: burlywood;} */
+
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

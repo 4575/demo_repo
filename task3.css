@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+.browser{
+    height: 500px;
+    width: 450px;
+    overflow: hidden;
+    background-color: white;
+    border: solid gray 8px;
+    border-radius: 18px;
+}
+.header{
+    height: 45px;
+    display: flex;
+    gap: 5px;
+    background-color: darkgray;
+    padding-left: 8px;
+    align-items: center;
+
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+
+}
+.red{
+    background-color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+.green{
+    background-color: green;
+}
+.content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+.top{
+    height: 70px;
+}
+.top-left{
+    flex: 2;
+    background-color: red;
+}
+.top-right{
+    flex:1;
+    background-color: red
+}
+.middle{
+    height: 200px;
+}
+.middle-left{
+    background-color: orange;
+    flex: 1;
+}
+.middle-right{
+    flex:1;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.purple{
+    flex:1;
+    background-color: purple;
+}
+.box{
+    border-radius: 3px;
+}
+.bottom{
+    height: 120px;
+    display: flex;
+    gap: 10px;
+}
+.blue{
+    flex: 1;
+    background-color: blue;
+}

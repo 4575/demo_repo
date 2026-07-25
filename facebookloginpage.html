@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .main{
+            display:flex;
+    height:100vh;
+            
+        }
+        img{
+            height: 150px;
+            width: 150px;
+        }
+        .left{
+            display:flex;
+    width:50%;
+    align-items:center;
+        }
+        .pic1{
+            position: absolute;
+            top:130px;
+            left: -30px;
+        }
+        .pic2{
+            position: absolute;
+            top:80px;
+            left: 90px;
+        }
+        .pic3{
+            position: absolute;
+            top:250px;
+            left: 0px;
+        }
+        .pic4{
+            position: absolute;
+            top:370px;
+            left: 100px;
+        }
+        .right{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+}
+        .login-box{
+    padding:50px;
+    text-align:center;
+}
+        .left h1{
+            color: rgb(43, 43, 255);
+        }
+        .form-control{
+    height:55px;
+    border-radius:15px;
+}
+.forgot-password{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.forgot-password:hover{
+    background-color: #f0f2f5;
+}
+        
+.collage{
+    position: relative;
+    width:450px;
+    height:450px;
+    margin-left:40px;
+}
+.right{
+    border-left:1px solid lightgray;
+}
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="logo"><img style="height: 70px; width: 70px; top: -180px; position: relative;" src="https://img.magnific.com/premium-psd/facebook-logo-blue-circle_705838-12823.jpg?semt=ais_hybrid&w=740&q=80" alt="Bootstrap" width="60" height="50">
+            <h1>
+Explore <br>
+the <br>
+things <br>
+you love.
+</h1></div>
+            <div class="collage"><img class="pic1" style="border-radius: 10%;" src="https://i.pinimg.com/564x/44/ee/ba/44eebab610b3527323fc8069ae98f640.jpg" alt="">
+            <img class="pic2" style="border-radius: 10%; height: 300px;" src="https://static.vecteezy.com/system/resources/previews/001/225/843/non_2x/portrait-of-a-young-black-woman-vector.jpg" alt="">
+            <img class="pic3" style="border-radius: 10%;" src="https://images.pexels.com/photos/2909/sport-skateboard-skateboarder-skateboarding.jpg?cs=srgb&dl=pexels-jaymantri-2909.jpg&fm=jpg" alt="">
+            <img class= "pic4" style="border-radius: 50%; height: 100px; width: 100px;" src="https://t3.ftcdn.net/jpg/03/14/72/24/360_F_314722405_ej1N7wLhpX3ywGHwCHGlRhdretfJZYA3.jpg" alt=""> </div>
+
+        
+        
+        
+        
+        
+        
+        </div>
+        <div class="right">
+            <form>
+  <div class="login-box">
+    <h2>Log in to Facebook</h2>
+    <label for="exampleInputEmail1" class="form-label"></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email or mobile number">
+    
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label" ></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" > 
+  </div>
+  <div style="display: flex; flex-direction: column; gap:10px;">
+  <button class="btn btn-primary">
+Login
+</button>
+  <a href="#" class="forgot-password">Forgot your password?</a>
+ <button class="btn btn-outline-primary">
+Create new account
+</button>
+  </div>
+  <p style="text-align: center;">Meta</p>
+</form>
+            
+            
+
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

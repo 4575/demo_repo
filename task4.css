@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+   
+}
+.browser{
+    height: 500px;
+    width: 450px;
+    
+    border-collapse: collapse;
+    background-color: darkblue ;
+    
+}
+.header{
+    
+
+  
+    height: 30px;
+    width:450px;
+    background-color: orange;
+    
+}
+.middle{
+    height: 300px;
+    background-color: darkblue;
+}
+
+td{
+    color: yellow;
+}
+.buttons{
+    background-color: orange;
+    text-align: right;
+    padding: 15px;
+}
+button{
+   border: none;
+   padding: 8px 20px;
+   color: white;
+   cursor: pointer;
+   margin: 1px
+}
+.submit{
+    background-color: green;
+}
+.cancel{
+    background-color: red;
+}
+    
+
+table{
+border-collapse: collapse;
+}
+
+th{
+    background-color: orange;
+    text-align: left;
+}
+.b{
+    text-align: right;
+}

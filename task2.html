@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+<style>
+    table,th,td{
+        border: 2px solid black ; 
+        border-collapse: collapse;
+        height: 50%;
+        width: 100%;
+        background-color: yellow;
+        padding: 5px;
+        word-spacing: 6px;
+        
+    }
+    .highlited_col{
+        background-color: red;
+    }
+</style>
+</head>
+<body>
+    <table align="center">
+        <caption style="caption-side: bottom;">Daily schedule</caption>
+        <tr>
+            <th rowspan="2">TASK</th>
+            <th colspan="7"> DAY OF THE WEEK</th>
+            
+        </tr>
+        <tr>
+            <td>mon</td>
+            <td>tue</td>
+            <td>wed</td>
+            <td>thu</td>
+            <td>fri</td>
+            <td>sat</td>
+            <td>sun</td>
+        </tr>
+        <tr>
+            <td>course</td>
+            <td>java</td>
+            <td>webdesigning</td>
+            <td>c lang</td>
+            <td>python</td>
+            <td>practical</td>
+            <td class="highlited_col" colspan="2" rowspan="2"> OFF</td>
+        </tr>
+        <tr>
+            <td>Work</td>
+            <td colspan="5">subject preparation and project work</td>
+        </tr>
+    </table>
+
+</body>
+</html>

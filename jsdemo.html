@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="demo">
+    <input  type="text" id="demo1">
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">+</button>
+    <button onclick="mul()">*</button>
+    <button onclick="divide()">/</button>
+    <input type="text" name="" id="demo2">
+
+
+
+<script >
+    
+function add()
+{
+    var a,b,c
+    a=Number(document.getElementById("demo").value)
+    b=Number(document.getElementById("demo1").value)
+    c=a+b
+    document.getElementById("demo2").value=c
+
+}
+function subtract()
+{
+    var a,b,c
+    a=Number(document.getElementById("demo").value)
+    b=Number(document.getElementById("demo1").value)
+    c=a-b
+    document.getElementById("demo2").value=c
+
+}
+function mul()
+{
+    var a,b,c
+    a=Number(document.getElementById("demo").value)
+    b=Number(document.getElementById("demo1").value)
+    c=a*b
+    document.getElementById("demo2").value=c
+
+}
+function divide()
+{
+    var a,b,c
+    a=Number(document.getElementById("demo").value)
+    b=Number(document.getElementById("demo1").value)
+    c=a/b
+    document.getElementById("demo2").value=c
+
+}
+
+
+
+</script>
+</body>
+</html>

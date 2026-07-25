@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kaziranga</title>
+    <style>
+        h5{
+            color: teal !important
+        }
+        .package-card{
+
+    border:none;
+    border-radius:0;
+    transition:.3s;
+    overflow:hidden;
+
+}
+
+.package-card img{
+
+    height:240px;
+    object-fit:cover;
+
+}
+
+.package-card .card-body{
+
+    background:#22c7b8;
+    color:white;
+    min-height:240px;
+
+}
+
+.package-card h3{
+
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:20px;
+
+}
+
+.package-card p{
+
+    font-size:17px;
+    line-height:1.7;
+
+}
+
+.package-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+.blog-card{
+
+    border:1px solid #ddd;
+    transition:.3s;
+    overflow:hidden;
+
+}
+
+.blog-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.blog-card img{
+
+    height:250px;
+    object-fit:cover;
+
+}
+
+.blog-date{
+
+    color:#5b8c2a;
+    font-size:17px;
+    font-weight:bold;
+
+}
+
+.blog-title{
+
+    font-size:32px;
+    margin:15px 0;
+
+}
+
+.blog-text{
+
+    font-size:17px;
+    color:#555;
+    line-height:1.7;
+
+}
+
+.read-more{
+
+    color:#4a8b22;
+    font-weight:bold;
+    text-decoration:none;
+
+}
+
+.read-more:hover{
+
+    color:black;
+
+}
+/* .social-bar{
+
+    position:fixed;
+
+    left:0;
+
+    top:35%;
+
+    z-index:999;
+
+}
+
+.share-count{
+
+    width:58px;
+
+    background:white;
+
+    text-align:center;
+
+    padding:8px 0;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    border:1px solid #ddd;
+
+}
+
+.social-bar a{
+
+    display:block;
+
+    width:58px;
+
+    height:58px;
+
+    color:white;
+
+    text-align:center;
+
+    line-height:58px;
+
+    font-size:24px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.social-bar a:hover{
+
+    opacity:.8;
+
+}
+
+.facebook{
+
+    background:#1877f2;
+
+}
+
+.twitter{
+
+    background:black;
+
+}
+
+.pinterest{
+
+    background:#e60023;
+
+}
+
+.linkedin{
+
+    background:#0a66c2;
+
+}
+
+.mail{
+
+    background:white;
+
+    color:#555 !important;
+
+    border:1px solid #ddd;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+.share{
+
+    background:#8dc63f;
+
+}
+        */
+
+        
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <Div style="background-color: #606569; height: 30px; width: 100%; text-align: end; padding: 3px; color: white;">
+        <p>+ 9212553107 / 9212777224</p>
+    </Div>
+
+<nav class="  navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><h2><span class="text-success">Kaziranga National</span> Park</h2> </a>
+     
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Packages</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Contact-Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Query</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Safari Booking</a>
+        </li>
+       
+      
+    </div>
+  </div>
+</nav>
+<div class="container-fluid p-0">
+  <div class="row">
+    <div class="col">
+      <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/kaziranga-national-park.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/kaziranga-national-park2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/kaziranga-national-park3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/kaziranga-national-park4.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/kaziranga-national-park5.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+   
+    
+  </div>
+</div>
+
+<div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <h2 style="text-align: center; color: teal;">Kaziranga National Park and Tiger Reserve</h2>
+        <p>All those who have thought Indian one-horned rhinoceros only existed in Jurassic-era, then a trip to Kaziranga is a must for them. One of the most sought after wildlife holiday destinations in India, Kaziranga National park’s 430 square kilometer area sprinkled with elephant-grass meadows, swampy lagoons, and dense forests is home to more than 2200 Indian one-horned rhinoceros, approximately 2/3rd of their total world population. Formed in 1908 on the recommendation of Mary Curzon, the park is located in the edge of the Eastern Himalayan biodiversity hotspots – Golaghat and Nagaon district. In the year 1985, the park was declared as a World Heritage Site by UNESCO. It is said when Mary Curzon, the wife of the Viceroy of India – Lord Curzon of Kedleston, visited the park to see Indian one-horned rhinoceros; she wasn’t able to found even one. Then she persuaded her husband to take urgent measures to protect the dwindling species which he did by initiating planning for their protection. After a series of meetings and documentations, the Kaziranga Proposed Reserve Forest was created with an area of 232 km2 (90 sq mi) in 1905. <br> <br>
+
+Along with the iconic Greater one-horned rhinoceros, the park is the breeding ground of elephants, wild water buffalo, and swamp deer. Over the time, the tiger population has also increased in Kaziranga, and that’s the reason why Kaziranga was declared as Tiger Reserve in 2006. Also, the park is recognized as an Important Bird Area by BirdLife International for the conservation of avifaunal species. Birds like lesser white-fronted goose, ferruginous duck, Baer’s pochard duck and lesser adjutant, greater adjutant, black-necked stork, and Asian Openbill stork specially migrate from the Central Asia during the winter season. <br> <br>
+
+Undoubtedly, the park is known for its good population of animals but more than that its the wildlife conservation initiatives that take place in the park are more popular. With its amazing wildlife conservation activities, the park has successfully managed to grow the population of Greater one-horned rhinoceros, an endangered species. <br> <br>
+
+The vast expanse of tall elephant grass, marshland, and dense tropical moist broadleaf forests undoubtedly makes the park look beautiful but it’s the presence of Brahmaputra river, which makes it look enigmatic.</p>
+
+    
+    <h5 style="color: teal;">Flora:</h5>
+    <p>Due to the difference in altitude between the eastern and western areas of the park, here one can see mainly four types of vegetation’ like alluvial inundated grasslands, alluvial savanna woodlands, tropical moist mixed deciduous forests, and tropical semi-evergreen forests. Kumbhi, Indian gooseberry, the cotton tree, and elephant Apple are amongst the famous trees that can be seen in the park. Also, a good variety of aquatic flora can be seen in lakes, ponds, and along the river shores.</p>
+    <h5>Fauna:</h5>
+    <p>The forest region of Kaziranga Park is home to world’s largest population of Indian Rhinoceros. Other animals that can be seen in the elephant grass, marshland and dense tropical moist broadleaf forests of Kaziranga are Hoolock Gibbon, Tiger, Leopard, Indian Elephant, Sloth Bear, Wild water buffalo, swamp deer, etc. With increase in tiger population every year, the government authorities declared Kaziranga as a Tiger Reserve in the year 2006. Also here one can find good number of migratory bird species from Central Asia.</p>
+    <h5>Best Time to Visit</h5>
+    <p>Kaziranga Park remain closed from 01 May till 31 Oct every year for the visitors. Therefore November to April is the best time to visit Kaziranga National Park.
+    </p>
+    <ul class="list-group">
+        <li>Summer (April to May): During this time of the year, the climate remains dry and windy; one can find animals around the water bodies.</li>
+        <li>Monsoon (June to September): From June till September, the region receives heavy rain, approximately 2,220 millimeters (87 in); thus the climate remains hot and humid. The park remains closed from May to October due to warnings of Brahmaputra river floods.</li>
+        <li>Winter (November to February): Perhaps the best time to visit the Kaziranga National Park as the climate is mild and dry. Chances of spotting rhinos are more in winter as the grass burn off and the background becomes clearer.</li>
+    </ul>
+    <h5>Safari Timings</h5>
+    <p>To promote wildlife tourism in Assam, Kaziranga Park authorities organizes a jeep and elephant safari tour.</p>
+    <ul>
+        <li>Morning Jeep Safari: 8:00 AM to 10:00 AM</li>
+        <li>Afternoon Jeep Safari: 02:00 PM to 04:00 PM</li>
+    </ul>
+    <h5>Elephant Safari Timing</h5>
+    
+    <ol style="list-style-type: circle;">
+        <li>Morning: 05:30 / 06:30</li>
+        <li>Morning: 06:30 / 07:30</li>
+    </ol> 
+    <h5>Safari Gate/Zones</h5>
+    <p>Sprawling over an area of 430 sq km, the park alias the hotspot of diversity is split into four areas; each has its own distinguish feature regarding grasslands, the density of mammals & bird, land topography, terrains. Below are some points of the pre-defined tourist circuits where the jeep safari takes place:</p>
+    <ol>
+        <li>Mihimukh in Central Range at Kohora</li>
+        <li>Bagori in Western Range at Bagori</li>
+        <li>Agaratoli in Eastern Range at Agaratoli</li>
+        <li>Ghorakati in Burapahar Range at Ghorakhati</li>
+    </ol>
+    <h5>Major Attractions in & Around the Park</h5>
+    <p>To enjoy the best of the park, it would be good to take a jeep or elephant but what apart from these options? Fortunately around Kaziranga, one can find an ample number of nature getaways options like wildlife sanctuaries, parks for bird watching and hill stations. So, if, by chance, tourists have some extra days at their disposal than go to the list of places mentioned below to make the holiday even memorable. Below are some places to visit around Kaziranga National Park:</p>
+    <ol>
+        
+        <li>Orang National Park (114 kms)</li>
+        <li>Hoollongapar Gibbon Sanctuary</li>
+        <li>Addabarie Tea Estate</li>
+        <li>Kakochang fall (46 kms)</li>
+        <li>Deopahar (51 kms)</li>
+    </ol>
+    <h5>If on an extended trip to Kaziranga, tourists can visit:</h5>
+   
+    <ol>
+        
+        <li>shillong</li>
+        <li> Guhuwati</li>
+        <li>Dibru-Saikhowa National Park</li>
+        <li>Nameri National Park</li>
+        <li>Manas National Park</li>
+    </ol>
+</div>
+
+</div>
+
+</div>
+
+<section class="container my-5">
+
+    <h1 class="text-center mb-5">WILDLIFE TOUR PACKAGES</h1>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/weekend-img1.jpg"
+                    class="card-img-top" alt="">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Weekend Package</h3>
+
+                    <p>
+                        <strong>Duration :</strong> 02 Nights & 03 Days
+                    </p>
+
+                    <p>
+                        <strong>Destination Covered :</strong>
+                        Guwahati - Kaziranga National Park - Guwahati
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/weekend-img2.jpg"
+                    class="card-img-top" alt="">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Kaziranga Rhino Tour</h3>
+
+                    <p>
+                        <strong>Duration :</strong> 06 Nights & 07 Days
+                    </p>
+
+                    <p>
+                        <strong>Destination Covered :</strong>
+                        Guwahati - Kaziranga - Shillong - Guwahati
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/weekend-img3.jpg"
+                    class="card-img-top" alt="">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Splendor of Assam</h3>
+
+                    <p>
+                        <strong>Duration :</strong> 06 Nights & 07 Days
+                    </p>
+
+                    <p>
+                        <strong>Destination Covered :</strong>
+                        Guwahati - Jorhat - Shillong - Toklai
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/weekend-img4.jpg"
+                    class="card-img-top" alt="">
+
+                <div class="card-body">
+
+                    <h3 class="card-title">Sights of Assam</h3>
+
+                    <p>
+                        <strong>Duration :</strong> 09 Nights & 10 Days
+                    </p>
+
+                    <p>
+                        <strong>Destination Covered :</strong>
+                        Dibrugarh - Jorhat - Kaziranga - Guwahati
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-end mt-4">
+
+        <button class="btn btn-dark px-4">
+            View All
+        </button>
+
+    </div>
+
+</section>
+ 
+<section class="container my-5">
+
+    <h1 class="text-center">HOTELS & RESORTS IN KAZIRANGA</h1>
+
+    <p class="text-center mb-5">
+        From luxury resort to rest houses to dormitories, an assortment of
+        accommodation options are available in Kaziranga National Park.
+        Most numbers of hotels are maintained and furnished by the Forest
+        departments. If traveling during the peak season, November to April,
+        it would be recommended to book ahead. Mentioned below are some
+        good hotels & resorts in Kaziranga National Park.
+    </p>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/jupuri-ghar-kaziranga.jpg"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 class="text-center">Jupuri Ghar</h3>
+
+                    <p>
+                        Jupuri Garh is situated just off the main road in the
+                        Kohora Tourist Range opposite to the Central Zone
+                        entrance with easy access to the booking office.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/iora-resort-kaziranga.jpg"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 class="text-center">Iora Resort</h3>
+
+                    <p>
+                        Nestled amidst lush green tea gardens, Iora Resort
+                        is one of the finest luxury resorts located on
+                        Guwahati National Highway.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/wild-grass-kaziranga.jpg"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 class="text-center">Wild Grass Lodge</h3>
+
+                    <p>
+                        Located outside Kaziranga National Park, Wild Grass
+                        Lodge offers a traditional rural style experience
+                        amidst beautiful greenery.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/uploads/2019/05/bon-habi-resort-kaziranga.jpg"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3 class="text-center">Bonhabi Resort</h3>
+
+                    <p>
+                        Bonhabi Resort is one of the nearest resorts to the
+                        Kaziranga National Park main entrance and provides
+                        comfortable accommodation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-end mt-4">
+
+        <button class="btn btn-dark">
+            View All
+        </button>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/themes/kaziranga/images/important-img1.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h2 class="text-center">About</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>▶ History of Kaziranga Park</li>
+
+                        <li>▶ Wildlife in Kaziranga</li>
+
+                        <li>▶ Flora in Kaziranga</li>
+
+                    </ul>
+
+                    <h5>More...</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/themes/kaziranga/images/important-img2.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h2 class="text-center">Birding Tour</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>▶ Kaziranga Bird Watching Tour</li>
+
+                        <li>▶ Birding around Kaziranga</li>
+
+                        <li>▶ Assam Bird Watching Tour</li>
+
+                    </ul>
+
+                    <h5>More...</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/themes/kaziranga/images/important-img3.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h2 class="text-center">Wildlife Special</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>▶ One Horned Rhino</li>
+
+                        <li>▶ Hoolock Gibbons</li>
+
+                        <li>▶ Wild Buffaloes</li>
+
+                    </ul>
+
+                    <h5>More...</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Card 4 -->
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card package-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/wp-content/themes/kaziranga/images/important-img4.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <h2 class="text-center">Wildlife Safari</h2>
+
+                    <ul class="list-unstyled">
+
+                        <li>▶ Safari Timing in Kaziranga</li>
+
+                        <li>▶ Elephant Safari in Kaziranga</li>
+
+                        <li>▶ Jeep Safari in Kaziranga</li>
+
+                    </ul>
+
+                    <h5>More...</h5>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <h1 class="text-center mb-5">Our Blog</h1>
+
+    <div class="row g-4">
+
+        <!-- Blog 1 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card blog-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/blog/wp-content/uploads/2026/07/Kaziranga-National-Park-Records-Highest-Tourist-Footfall.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <p class="blog-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        20 Jul, 2025
+                    </p>
+
+                    <h3 class="blog-title">
+                        Kaziranga National Park Records Highest Tourist Footfall
+                    </h3>
+
+                    <p class="blog-text">
+                        Tourist arrivals at Kaziranga National Park and Tiger
+                        Reserve have reached a record high this year...
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Blog 2 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card blog-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/blog/wp-content/uploads/2026/07/Kaziranga-Bids-Farewell-to-Joymala.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <p class="blog-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        07 Jul, 2025
+                    </p>
+
+                    <h3 class="blog-title">
+                        Kaziranga Bids Farewell To Joymala
+                    </h3>
+
+                    <p class="blog-text">
+                        For more than three decades the legendary patrol elephant
+                        protected Assam's wildlife...
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Blog 3 -->
+
+        <div class="col-lg-4 col-md-6">
+
+            <div class="card blog-card h-100">
+
+                <img src="https://www.kaziranga-national-park.com/blog/wp-content/uploads/2026/06/Manas-National-Park-Zero-Rhino-and-Tiger-Poaching.jpg"
+                    class="card-img-top">
+
+                <div class="card-body">
+
+                    <p class="blog-date">
+                        <i class="fa-regular fa-calendar"></i>
+                        17 Jun, 2025
+                    </p>
+
+                    <h3 class="blog-title">
+                        Manas National Park Achieves Three Years Of Zero Rhino And Tiger Poaching
+                    </h3>
+
+                    <p class="blog-text">
+                        Manas National Park has recorded three consecutive years
+                        without rhino or tiger poaching...
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div style="background-color: grey; text-align: center;" class="container">
+
+        <p>
+
+            Copyright © 2026 Kaziranga National Park. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+<!-- <div class="social-bar">
+
+    <div class="share-count">
+        <strong>4.6k</strong><br>
+        Shares
+    </div>
+
+    <a href="#" class="facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="#" class="twitter">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
+
+    <a href="#" class="pinterest">
+        <i class="fa-brands fa-pinterest-p"></i>
+    </a>
+
+    <a href="#" class="linkedin">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+
+    <a href="#" class="mail">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="#" class="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <a href="#" class="share">
+        <i class="fa-solid fa-share-nodes"></i>
+    </a>
+
+</div>
+     -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>
