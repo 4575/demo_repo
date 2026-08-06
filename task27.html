@@ -7,24 +7,37 @@
 </head>
 <body>
     <input type="text" name="" id="demo1" >
-    <input type="text" name="" id="demo2" >
-    <button onclick="swap()">swap</button>
-    <input type="text" name="" id="demo3">
+   
+    <button onclick="check()">check</button>
+   
     <input type="text" name="" id="demo4">
 
     
 
     <script>
-        function swap()
+        function check()
         {
-            var a,b 
-            a= Number(document.getElementById("demo1").value)
-            b=Number(document.getElementById("demo2").value)
-            a=a+b
-            b=a-b
-            a=a-b
-            document.getElementById("demo3").value = a
-            document.getElementById("demo4").value = b
+            var a,text="";
+            a= document.getElementById("demo1").value
+            switch(a)
+            {
+                case "a":
+                    text="apple";
+                break;
+
+                case "b":
+                    text="banana";
+                break;
+
+                case "c":
+                    text="citrus";
+                break;
+
+                default:
+                    text="default"
+                break;
+            }
+            document.getElementById("demo4").value = text
             
             
 

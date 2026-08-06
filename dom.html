@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>demo</p>
+    <p>demo1</p> -->
+    <p class="color">demo</p>
+    <p class="color">demo1</p>
+    <p class="color">demo2</p>
+    <button onclick="check()">Submit</button>
+
+
+    <script>
+        function check(){
+            // const p = document.getElementsByTagName("p");
+            // // p.innerHTML = "hello";
+            // // p.style.backgroundColor = "yellow";
+            // // p.style.color="red";
+
+            // for(i=0;i<p.length;i++){
+            //     p[i].style.color="red"
+
+            let p = document.getElementsByClassName("color")
+            for (i=0;i<p.length;i++){
+                p[i].style.color = "red"
+                
+            }
+            }
+
+
+        
+    </script>
+</body>
+</html>
